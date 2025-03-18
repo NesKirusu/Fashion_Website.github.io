@@ -1,6 +1,5 @@
-@import url(../layout/footer.css);
-@import url(../layout/header.css);
+@import url(layout/footer.css);
+@import url(layout/header.css);
 @import url(-base/reset.css);
 @import url(-base/typography.css);
 @import url(-base/colors.css);
-@import url(homepage/style.css);

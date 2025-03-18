@@ -8,7 +8,9 @@
     gap: 1rem;
     grid-template-columns: 1fr repeat(8, auto);
     padding: 0.5rem 1rem 0.5rem 1rem;
-    background-color: var(--primary);
+    background-color: var(--primary2);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--primary);
     place-items: center;
     z-index: 1000;
 }
@@ -64,14 +66,20 @@
         grid-column: -1;
     }
 }
-.hamburger{
+.container{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100%;
+}
+.container .hamburger{
     overflow: hidden;
     box-sizing: border-box;
     position: sticky;
     display: none;
     top: 10vh;
     margin-top: -12vh;
-    width: 50%;
+    width: 40%;
     opacity: 1;
     height: 60vh;
     right: 0;
@@ -80,7 +88,9 @@
     grid-template-rows: repeat(8, 1fr);
     place-items: center;
     justify-self: end;
-    background-color: var(--primary);
+    background-color: var(--primary2);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--primary);
     transition: all 0.7s ease-out;
     z-index: 1000;
     
@@ -88,16 +98,17 @@
         display: grid;
     }
 }
-.hidden{
+.container .hidden{
     width: 0px;
     opacity: 0;
 }
-.hamburger a{
+.container .hamburger a{
     display: flex;
     position: relative;
     color: var(--text);
     font-family: Outfit;
     font-size: 1.2rem;
+    text-wrap: nowrap;
     padding: 0;
     cursor: pointer;
     text-decoration: none;
