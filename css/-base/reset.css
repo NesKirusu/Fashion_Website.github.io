@@ -2,9 +2,10 @@ body{
     position: relative;
     margin: 0;
     padding: 0;
+    width: 100vw;
     box-sizing: border-box;
-    scroll-behavior: auto !important;
     background-color: var(--background);
+    scroll-behavior: smooth;
 }
 ::-webkit-scrollbar{
     width: 0px;
