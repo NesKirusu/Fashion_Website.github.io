@@ -43,7 +43,7 @@
 .site .hero_container .hero_track .hero h1{
     overflow: hidden;
     font-family: Outfit;
-    font-size: 10vw;
+    font-size: clamp(8rem, 10vw, 20rem);
     text-shadow: 0px 0px 5px var(--secondary);
     color: var(--primary);
     display: flex;
@@ -55,9 +55,9 @@
     background-color: var(--background);
     z-index: 1;
 
-    @media (max-width: 895px) {
+    /* @media (max-width: 895px) {
         font-size: 20vw;
-    }
+    } */
 }
 /* .site .hero_container .hero_track .hero h1 span{
     transform: translateY(-100%);
