@@ -1,5 +1,89 @@
 .site{
     width: 100vw;
-    min-height: 100%;
     background-color: var(--background);
+}
+.site .hero_container{
+    position: relative;
+    width: 100%;
+    height: 200vh;
+    background-color: green;
+}
+.site .hero_container .hero_track{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+}
+.site .hero_container .hero_track .hero{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--background);
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "herotext1 heroimage"
+    "herotext2 heroimage"
+    ;
+    gap: 1rem;
+    z-index: 1;
+
+    @media (max-width: 895px) {
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+        "herotext1"
+        "herotext2"
+        "heroimage"
+        ;
+    }
+}
+.site .hero_container .hero_track .hero h1{
+    font-family: Outfit;
+    font-size: 10vw;
+}
+.site .hero_container .hero_track .hero h1:nth-child(1){
+    grid-area: herotext1;
+}
+.site .hero_container .hero_track .hero h1:nth-child(2){
+    grid-area: herotext2;
+
+}
+.site .hero_container .hero_track .hero .hero_image{
+    grid-area: heroimage;
+    width: 100%;
+    height: 100%;
+    background-color: green;
+}
+.site .blog_container{
+    position: relative;
+    display: flex;
+    padding: 1rem 10rem 1rem 10rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: var(--background);
+    z-index: 2;
+    @media (max-width: 895px) {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+}
+.site .blog_container .blog{
+    padding: 1rem;
+    width: 300px;
+    font-family: Outfit;
+    display: grid;
+    row-gap: 1rem;
+    padding: 1rem;
+    grid-template-rows: repeat(2,auto) 1fr;
+}
+.site .blog_container .blog .image{
+}
+.site .blog_container .blog .title{
+    font-size: 2rem;
+}
+.site .blog_container .blog .description{
+    display: flex;
+    font-size: 1rem;
 }
