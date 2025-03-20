@@ -3,10 +3,14 @@ body{
     margin: 0;
     padding: 0;
     width: 100vw;
-    box-sizing: border-box;
     background-color: var(--background);
     scroll-behavior: smooth;
 }
 ::-webkit-scrollbar{
     width: 0px;
+}
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
 }
