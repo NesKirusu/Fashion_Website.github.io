@@ -1,0 +1,76 @@
+.site{
+    --hero_height: 200vh;
+}
+.site .hero_container{
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    width: 100vw;
+    height: var(--hero_height);
+}
+.site .hero_container .hero_track{
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: red;
+}
+.site .nav_container{
+    margin-top: var(--hero_height);
+    width: 100vw;
+}
+.site .nav_container .nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.site .nav_container .nav{
+    background-color: var(--primary2);
+}
+.site .nav_container .nav ul{
+    cursor: pointer;
+    font-family: Outfit;
+    font-size: 2rem;
+    color: var(--text);
+    z-index: 11;
+}
+
+.site .content_container{
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+    z-index: 10;
+}
+.site .content_container .content_trending{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+.site .content_container .content_trending .hidden{
+    z-index: -1;
+    display: none;
+}
+.site .content_container .content_news{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+.site .content_container .content_news .hidden{
+    z-index: -1;
+    display: none;
+}
+.site .content_container .content_discussions{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+.site .content_container .content_discussions .hidden{
+    z-index: -1;
+    display: none;
+}
