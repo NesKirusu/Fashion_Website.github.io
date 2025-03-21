@@ -1,20 +1,17 @@
-
+trending_click()
 function news_click(){
-    console.log("NEWS CLICKED")
-    document.getElementById('content_trending').classList.toggle('hidden');
-    document.getElementById('content_discussions').classList.toggle('hidden');
-    console.log("NEWS CLICKED")
+    document.getElementById('content_trending').classList.add('content_hidden');
+    document.getElementById('content_discussions').classList.add('content_hidden');
+    document.getElementById('content_news').classList.remove('content_hidden');
 };
 
 function discussions_click(){
-    console.log("DISCUSSIONS CLICKED")
-    document.getElementById('content_trending').classList.toggle('hidden');
-    document.getElementById('content_news').classList.toggle('hidden');
-    console.log("DISCUSSIONS CLICKED")
+    document.getElementById('content_trending').classList.add('content_hidden');
+    document.getElementById('content_news').classList.add('content_hidden');
+    document.getElementById('content_discussions').classList.remove('content_hidden');
 };
 function trending_click(){
-    console.log("TRENDING CLICKED")
-    document.getElementById('content_news').classList.toggle('hidden');
-    document.getElementById('content_discussions').classList.toggle('hidden');
-    console.log("TRENDING CLICKED")
+    document.getElementById('content_news').classList.add('content_hidden');
+    document.getElementById('content_discussions').classList.add('content_hidden');
+    document.getElementById('content_trending').classList.remove('content_hidden');
 };

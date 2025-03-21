@@ -1,3 +1,27 @@
-.component-box_container{
+
+.component-box_container {
+    display: grid;
+    padding: 1rem;
+    gap: 1rem;
+    grid-template-rows: subgrid;
+    background-color: var(--background);
+    border: 1px solid var(--primary2);
+    font-family: Outfit;
+    grid-row: span 3;
+}
+.component-box_container .image{
+    height: 400px;
+    width: 100%;
+    background-image: var(--image_src);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.component-box_container .title{
+    text-align: center;
+    font-size: 2rem;
+}
+.component-box_container .description{
 
 }
+/* ^^^ COMPONENT 1 ^^^ */

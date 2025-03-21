@@ -1,8 +1,9 @@
 .site{
+    display: flex;
+    flex-direction: column;
     --hero_height: 200vh;
 }
 .site .hero_container{
-    position: absolute;
     top: 10vh;
     left: 0;
     width: 100vw;
@@ -13,10 +14,27 @@
     top: 0;
     width: 100vw;
     height: 100vh;
-    background-color: red;
+}
+.site .hero_container .hero_track .hero{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../img/hero-img3.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+}
+.site .hero_container .hero_track .hero H1{
+    font-family: Outfit;
+    font-size: 10vw;
+    color: var(--text);
 }
 .site .nav_container{
-    margin-top: var(--hero_height);
+    display: flex;
+    flex-direction: column;
+    position: relative;
     width: 100vw;
 }
 .site .nav_container .nav{
@@ -29,48 +47,83 @@
 }
 .site .nav_container .nav ul{
     cursor: pointer;
+    width: 200px;
     font-family: Outfit;
     font-size: 2rem;
+    padding: 0;
+    text-align: center;
     color: var(--text);
     z-index: 11;
 }
 
 .site .content_container{
-    overflow: hidden;
-    position: relative;
-    height: 100vh;
+    width: 100vw;
     z-index: 10;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background);
+}
+.site .content_container h1{
+    font-family: Outfit;
+    color: var(--text);
+    font-size: 4rem;
 }
 .site .content_container .content_trending{
-    position: absolute;
+    display: flex;
     top: 0;
     left: 0;
     width: 100%;
+    height: 100%;
     z-index: 1;
+    transition: all 0.5s ease-in-out;
+    transition-behavior: allow-discrete;
 }
-.site .content_container .content_trending .hidden{
-    z-index: -1;
-    display: none;
+.site .content_container .content_trending .container{
+    position: relative;
+    width: 100%;
+    padding: 1rem;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 500px));
+    grid-template-rows: auto auto auto;
+    gap: 2rem;
 }
+/* COMPONENT */
 .site .content_container .content_news{
-    position: absolute;
+    display: flex;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1;
+    background-color: var(--background);
+    transition: all 0.5s ease-in-out;
+    transition-behavior: allow-discrete;
 }
-.site .content_container .content_news .hidden{
-    z-index: -1;
-    display: none;
+/* COMPONENT */
+.site .content_container .content_news .container{
+    position: relative;
+    width: 100%;
+    padding: 1rem;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 500px));
+    grid-template-rows: auto auto auto;
+    gap: 2rem;
 }
 .site .content_container .content_discussions{
-    position: absolute;
-    top: 0;
-    left: 0;
+    display: flex;
+    position: relative;
     width: 100%;
+    height: 100%;
     z-index: 1;
+    background-color: red;
+    transition: all 0.5s ease-in-out;
+    transition-behavior: allow-discrete;
 }
-.site .content_container .content_discussions .hidden{
-    z-index: -1;
-    display: none;
+.content_hidden{
+    visibility: hidden;
+    opacity: 0;
+    max-height: 0;
 }
+

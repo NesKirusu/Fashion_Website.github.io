@@ -6,7 +6,7 @@
     width: 100vw;
     height: 10vh;
     gap: 1rem;
-    grid-template-columns: 1fr repeat(8, auto);
+    grid-template-columns: 1fr repeat(9, auto);
     padding: 0.5rem 1rem 0.5rem 1rem;
     background-color: var(--primary2);
     backdrop-filter: blur(10px);
@@ -34,7 +34,8 @@
         display: none;
     }
 }
-.site-header a:not(:hover)::after, .hamburger a:not(:hover)::after{
+.site-header a:not(:hover)::after, 
+.hamburger a:not(:hover)::after{
     width: 0%;
 }
 .site-header a::after, .hamburger a::after{
@@ -83,7 +84,7 @@
     opacity: 1;
     height: 60vh;
     right: 0;
-    padding: 0rem;
+    padding: 1rem;
     border-bottom-left-radius: 10px;
     grid-template-rows: repeat(8, 1fr);
     place-items: center;
