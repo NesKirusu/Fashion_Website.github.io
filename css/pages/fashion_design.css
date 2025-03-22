@@ -10,6 +10,7 @@
     height: var(--hero_height);
 }
 .site .hero_container .hero_track{
+    overflow: clip;
     position: sticky;
     top: 0;
     width: 100vw;
@@ -25,11 +26,29 @@
     background-repeat: no-repeat;
     justify-content: center;
     align-items: center;
+    filter: grayscale(1);
+    animation: scroll-grayscale;
+    animation-timeline: view();
+}
+@keyframes scroll-grayscale {
+    0%,30%{
+        filter: grayscale(1);
+        transform: scale(1.0);
+    }
+    100%{
+        filter: grayscale(0);
+        transform: scale(1.1);
+    }
 }
 .site .hero_container .hero_track .hero H1{
     font-family: Outfit;
     font-size: 10vw;
-    color: var(--text);
+    color: var(--primary2);
+    background-color: var(--primary2);
+    background-clip: text;
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+
 }
 .site .nav_container{
     display: flex;
@@ -70,13 +89,15 @@
 }
 .site .content_container .content_trending{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
     z-index: 1;
     transition: all 0.5s ease-in-out;
     transition-behavior: allow-discrete;
+    padding-bottom: 5vh;
 }
 .site .content_container .content_trending .container{
     position: relative;

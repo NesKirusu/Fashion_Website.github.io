@@ -1,3 +1,8 @@
+/* 
+image:
+title:
+description: 
+*/
 
 .component-box_container {
     display: grid;
@@ -22,6 +27,69 @@
     font-size: 2rem;
 }
 .component-box_container .description{
-
+    text-align: center;
+    font-size: 1.2rem;
 }
+
 /* ^^^ COMPONENT 1 ^^^ */
+
+/* 
+title:
+big_box
+small_box
+*/
+
+.component-box_container_simple_box{
+
+} 
+
+/* ^^^ COMPONENT 2 ^^^ */
+
+/* 
+image:
+-title:
+-author: 
+*/
+
+.component-box_container_big{
+    overflow: hidden;
+    --image_height: 600px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 800px));
+    place-items: center;
+    transition: all 0.3s ease-in-out;
+}
+.component-box_container_big:not(:hover){
+    filter: grayscale();
+}
+.component-box_container_big:hover .image{
+    background-size: 115%;
+}
+.component-box_container_big .image{
+    height: var(--image_height);
+    width: 100%;
+    transform: scale(1.0);
+    background-image: var(--image_src);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 110%;
+    transition: all 0.3s ease-in-out;
+}
+.component-box_container_big .title{
+    width: 100%;
+    padding: 0.5rem;
+    background-color: var(--primary2);
+    backdrop-filter: blur(10px);
+    padding-bottom: 1rem;
+    text-align: center;
+    font-family: Outfit;
+    font-size: 2rem;
+}
+.component-box_container_big .author{
+    background-color: var(--primary2);
+    backdrop-filter: blur(10px);
+    bottom: 0;
+    text-align: center;
+}
+
+/* ^^^ COMPONENT 3 ^^^ */
