@@ -7,7 +7,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="../../css/main.css">
-    <link rel="stylesheet" href="../../css/pages">
+    <link rel="stylesheet" href="../../css/pages.css">
     <!-- CSS -->
 
     <title>Urban Trends</title>
@@ -16,32 +16,29 @@
     <!-- HEADER -->
     <div class="site-header">
         <a href="../homepage/index.html"><span id="logo"></span></a>
-        <a href="../homepage/index.html">Home</a>
-        <a href="../accessories/index.html">Accesories</a>
-        <a href="../fashion_design/index.html">Fashion</a>
-        <a href="../news_fashion_alert/index.html">News</a>
-        <a href="../dress_clothes_jeans/index.html">Tops</a>
-        <a href="../shoes_bags/index.html">Shoes & Bags</a>
-        <a href="../styles_fashion_gallery/index.html">Gallery</a>
-        <a href="../tips_and_tricks_combinations/index.html">Combinations</a>
-        <a href="../designers_references/index.html">References</a>
+        <a onclick="transition('../fashion_design/index.html')">Fashion News</a>
+        <a onclick="transition('../editorial/index.html')">Editorial</a>
+        <a onclick="transition('../clothing/index.html')">Clothing</a>
+        <a onclick="transition('../shoes_bags/index.html')">Shoes & Bags</a>
+        <a onclick="transition('../accessories/index.html')">Accessories</a>
+        <a onclick="transition('../styles_fashion_gallery/index.html')">Gallery</a>
+        <a onclick="transition('../tips_and_tricks_combinations/index.html')">Style Tips</a>
+        <a onclick="transition('../designers_references/index.html')">Designers & References</a>
         <button onclick="hamburger()">☰</button>
     </div>
     <div class="container">
         <div class="hamburger hidden" id="hamburger">
-            <a href="../homepage/index.html">Home</a>
-            <a href="../accessories/index.html">Accesories</a>
-            <a href="../fashion_design/index.html">Fashion</a>
-            <a href="../news_fashion_alert/index.html">News</a>
-            <a href="../dress_clothes_jeans/index.html">Tops</a>
-            <a href="../shoes_bags/index.html">Shoes & Bags</a>
-            <a href="../styles_fashion_gallery/index.html">Gallery</a>
-            <a href="../tips_and_tricks_combinations/index.html">Combinations</a>
-            <a href="../designers_references/index.html">References</a>
+            <a onclick="transition('../fashion_design/index.html')">Fashion News</a>
+            <a onclick="transition('../editorial/index.html')">Editorial</a>
+            <a onclick="transition('../clothing/index.html')">Clothing</a>
+            <a onclick="transition('../shoes_bags/index.html')">Shoes & Bags</a>
+            <a onclick="transition('../accessories/index.html')">Accessories</a>
+            <a onclick="transition('../styles_fashion_gallery/index.html')">Gallery</a>
+            <a onclick="transition('../tips_and_tricks_combinations/index.html')">Style Tips</a>
+            <a onclick="transition('../designers_references/index.html')">Designers & References</a>
         </div>
     </div>
     <!-- HEADER -->
-
 
     
     <!-- FOOTER -->
@@ -54,5 +51,6 @@
     <!-- FOOTER -->
 </body>
 <script src="app.js"></script>
+<script src="../../css/layout/transition.js"></script>
 <script src="../../css/layout/header.js"></script>
 </html>
