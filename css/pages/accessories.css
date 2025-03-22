@@ -1,0 +1,16 @@
+.site{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+.site .carousel_container{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+.site .accessories_container{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--primary2);
+}

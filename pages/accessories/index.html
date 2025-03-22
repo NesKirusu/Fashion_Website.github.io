@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Urban Trends - Your go-to fashion destination for accessories, shoes, bags, and the latest trends.">
+    <link rel="icon" type="image/x-icon" href="../../img/logo.svg">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/pages/accessories.css">
+    <!-- CSS -->
+
+    <title>Urban Trends</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <div class="site-header">
+        <a href="../homepage/index.html"><span id="logo"></span></a>
+        <a onclick="transition('../fashion_design/index.html')">Fashion News</a>
+        <a onclick="transition('../editorial/index.html')">editorial</a>
+        <a onclick="transition('../clothing/index.html')">Clothing</a>
+        <a onclick="transition('../shoes_bags/index.html')">Shoes & Bags</a>
+        <a onclick="transition('../accessories/index.html')">Accessories</a>
+        <a onclick="transition('../styles_fashion_gallery/index.html')">Gallery</a>
+        <a onclick="transition('../tips_and_tricks_combinations/index.html')">Style Tips</a>
+        <a onclick="transition('../designers_references/index.html')">Designers & References</a>
+        <button onclick="hamburger()">☰</button>
+    </div>
+    <div class="container">
+        <div class="hamburger hidden" id="hamburger">
+            <a onclick="transition('../fashion_design/index.html')">Fashion News</a>
+            <a onclick="transition('../editorial/index.html')">editorial</a>
+            <a onclick="transition('../clothing/index.html')">Clothing</a>
+            <a onclick="transition('../shoes_bags/index.html')">Shoes & Bags</a>
+            <a onclick="transition('../accessories/index.html')">Accessories</a>
+            <a onclick="transition('../styles_fashion_gallery/index.html')">Gallery</a>
+            <a onclick="transition('../tips_and_tricks_combinations/index.html')">Style Tips</a>
+            <a onclick="transition('../designers_references/index.html')">Designers & References</a>
+        </div>
+    </div>
+    <!-- HEADER -->
+
+    <!-- SITE -->
+    <div class="site">
+        <div class="carousel_container"></div>
+        <div class="accessories_container"></div>
+    </div>
+    <!-- SITE -->
+
+    <!-- FOOTER -->
+    <div class="site-footer">
+        <h1>URBAN TRENDS</h1>
+        <p>by Kevin</p>
+        <div class="contact_message"></div>
+        <div class="links"></div>
+    </div>
+    <!-- FOOTER -->
+</body>
+<script src="../../css/layout/transition.js"></script>
+<script src="../../css/layout/header.js"></script>
+</html>
+

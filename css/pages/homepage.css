@@ -174,7 +174,7 @@
     color: var(--primary2);
     background-size: 0% 100%;
     background-clip: text;
-    background-image: linear-gradient(90deg, white 0%, black 0%);
+    background-image: linear-gradient(90deg, white 0%, var(--text) 0%);
     background-repeat: no-repeat;
     -webkit-background-clip: text;
     animation: text-fill linear forwards;
@@ -193,6 +193,7 @@
 .site .slogan_container .blog_header{
     position: relative;
     margin-top: 200vh;
+    color: var(--text);
     width: 100vw;
     font-size: 3rem;
     padding: 1rem;
@@ -219,6 +220,7 @@
     padding: 1rem;
     width: 100%;
     font-family: Outfit;
+    color: var(--text);
     display: grid;
     row-gap: 1rem;
     grid-template-rows: subgrid;

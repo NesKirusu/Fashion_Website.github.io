@@ -5,6 +5,8 @@ body{
     width: 100vw;
     background-color: var(--background);
     scroll-behavior: smooth;
+    opacity: 0;
+    transition: opacity .4s;
 }
 ::-webkit-scrollbar{
     width: 0px;

@@ -1,22 +1,21 @@
 :root{
-    --text: #000000;
+    /* 
+    DEFAULT: #352f36 
+    */
+    --text: #352f36;
     --background: #ffe8d5;
     --background2: #e9d3c1;
     --primary: #bfac9c;
     --primary2: #bfac9c3d;
     --secondary: #514942;
     --accent: #000000;
-
-    --mobile: 895px;
 }
-:root.dark{
-    --text: #000000;
+.darkmode{
+    --text: #352f36;
     --background: #ffe8d5;
     --background2: #e9d3c1;
     --primary: #bfac9c;
     --primary2: #bfac9c3d;
     --secondary: #514942;
     --accent: #000000;
-
-    --mobile: 895px;
 }
