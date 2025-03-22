@@ -61,9 +61,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.site .nav_container .nav{
     background-color: var(--primary2);
+    padding: 2rem;
 }
 .site .nav_container .nav ul{
     cursor: pointer;
@@ -141,8 +140,6 @@
     flex-direction: column;
     position: relative;
     width: 100%;
-    height: 100%;
-    margin-bottom: 5vh;
     z-index: 1;
     transition: all 0.5s ease-in-out;
     transition-behavior: allow-discrete;
@@ -157,9 +154,12 @@
 }
 /* COMPONENT */
 
-.content_hidden{
+.content_hidden *{
+    position: absolute;
     visibility: hidden;
     opacity: 0;
     max-height: 0;
+    transition: all 0.5s ease-in-out;
+    transition-behavior: allow-discrete;
 }
 

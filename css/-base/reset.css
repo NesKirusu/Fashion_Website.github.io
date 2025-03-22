@@ -1,7 +1,5 @@
 body{
     position: relative;
-    margin: 0;
-    padding: 0;
     width: 100vw;
     background-color: var(--background);
     scroll-behavior: smooth;
@@ -15,4 +13,6 @@ body{
 *::after,
 *::before{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
