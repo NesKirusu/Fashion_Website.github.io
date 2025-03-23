@@ -146,6 +146,7 @@ image:
     background-color: var(--background);
 }
 .component-carousel .item{
+    overflow: hidden;
     position: absolute;
     display: grid;
     grid-template-columns: 2fr 3fr 2fr;
@@ -176,30 +177,33 @@ image:
     }
 }
 .component-carousel .item:not(:first-child){
-    overflow: hidden;
     visibility: hidden;
-    left: 100%;
     width: 0;
+    left: 100%;
     opacity: 0;
 }
 .component-carousel .item .title{
     grid-area: title;
-    border: 1px solid var(--primary);
     align-content: center;
+    margin-left: 100px;
 }
 .component-carousel .item .image{
     grid-area: image;
-    margin: 2rem;
-    border: 1px solid var(--primary);
+    margin: 4rem;
     background-image: var(--image_src);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+    mix-blend-mode: darken;
 }
 .component-carousel .item .description{
     grid-area: description;
-    border: 1px solid var(--primary);
     align-content: center;
+    margin-right: 100px;
+    @media (max-width: 1260px) {
+        margin-right: 0px;
+        margin-left: 100px;
+    }
 }
 .component-carousel_hidden{
     opacity: 0;
