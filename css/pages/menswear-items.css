@@ -49,6 +49,7 @@
     height: 60vh;
 }
 .site .carousel_container .component-carousel .item{
+    border-bottom: 1px solid var(--primary);
     height: 60vh;
 }
 .component-carousel .item .title h1,
@@ -93,6 +94,7 @@
     z-index: 1;
     margin: 1rem;
     transition: all 0.3s ease-in-out;
+    margin-bottom: 20vh;
 }
 .site .nextbutton:hover,
 .site .prevbutton:hover{
