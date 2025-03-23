@@ -8,6 +8,63 @@
     width: 100%;
     height: 100vh;
 }
+.component-carousel .item .title h1,
+.component-carousel .item .title h2{
+    text-align: end;
+    font-size: 2rem;
+    margin: 10px 10px 10px 100px;
+    width: 20vw;
+    color: var(--text);
+    font-family: Outfit;
+    font-weight: 300;
+    justify-self: center;
+}
+.component-carousel .item .title h2{
+    font-size: 1.5rem;
+}
+.component-carousel .item .description p{
+    text-align: start;
+    font-size: 1.5rem;
+    margin: 50px 100px 50px 10px;
+    width: 20vw;
+    color: var(--text);
+    font-family: Outfit;
+    font-weight: 300;
+    border-bottom: 1px solid var(--text);
+    justify-self: center;
+}
+.site .nextbutton,
+.site .prevbutton{
+    cursor: pointer;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 100vh;
+    background-color: var(--primary2);
+    backdrop-filter: blur(10px);
+    z-index: 1;
+    border: 1px solid var(--primary);
+    transition: all 0.3s ease-in-out;
+}
+.site .nextbutton:hover,
+.site .prevbutton:hover{
+    width: 90px;
+}
+.site .nextbutton{
+    right: 0;
+}
+.site .prevbutton{
+    left: 0;
+}
+.site .nextbutton h1,
+.site .prevbutton h1{
+    font-family: Outfit;
+    font-weight: 200;
+    padding-bottom: 2rem;
+}
 .site .accessories_container{
     display: flex;
     width: 100%;

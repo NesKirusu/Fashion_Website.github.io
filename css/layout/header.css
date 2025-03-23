@@ -6,7 +6,7 @@
     width: 100vw;
     height: 10vh;
     gap: 1rem;
-    grid-template-columns: 1fr repeat(9, auto);
+    grid-template-columns: 1fr repeat(10, auto);
     padding: 0.5rem 1rem 0.5rem 1rem;
     background-color: var(--primary2);
     backdrop-filter: blur(10px);

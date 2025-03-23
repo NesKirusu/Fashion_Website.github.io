@@ -15,10 +15,11 @@
 <body>
     <!-- HEADER -->
     <div class="site-header">
-        <a href="../homepage/index.html"><span id="logo"></span></a>
+        <span id="logo" onclick="transition('../homepage/index.html')" style="cursor: pointer;"></span>
         <a onclick="transition('../fashion_design/index.html')">Fashion News</a>
         <a onclick="transition('../editorial/index.html')">Editorial</a>
-        <a onclick="transition('../clothing/index.html')">Clothing</a>
+        <a onclick="transition('../dress_clothes_jeans,_shoes(clothing)mens/index.html')">Menswear</a>
+        <a onclick="transition('../dress_clothes_jeans,_shoes(clothing)womens/index.html')">Womenswear</a>
         <a onclick="transition('../shoes_bags/index.html')">Shoes & Bags</a>
         <a onclick="transition('../accessories/index.html')">Accessories</a>
         <a onclick="transition('../styles_fashion_gallery/index.html')">Gallery</a>
@@ -30,7 +31,8 @@
         <div class="hamburger hidden" id="hamburger">
             <a onclick="transition('../fashion_design/index.html')">Fashion News</a>
             <a onclick="transition('../editorial/index.html')">Editorial</a>
-            <a onclick="transition('../clothing/index.html')">Clothing</a>
+        <a onclick="transition('../dress_clothes_jeans,_shoes(clothing)mens/index.html')">Menswear</a>
+        <a onclick="transition('../dress_clothes_jeans,_shoes(clothing)womens/index.html')">Womenswear</a>
             <a onclick="transition('../shoes_bags/index.html')">Shoes & Bags</a>
             <a onclick="transition('../accessories/index.html')">Accessories</a>
             <a onclick="transition('../styles_fashion_gallery/index.html')">Gallery</a>
