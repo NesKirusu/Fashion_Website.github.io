@@ -190,11 +190,11 @@ image:
 .component-carousel .item .image{
     grid-area: image;
     margin: 4rem;
+    height: 100%;
     background-image: var(--image_src);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    mix-blend-mode: darken;
 }
 .component-carousel .item .description{
     grid-area: description;
@@ -214,19 +214,19 @@ image:
 <div class="carousel_container">
     <div class="component-carousel" id="carousel">
         <div class="item">
-            <div class="title"></div>
-            <div class="image" style="--image_src: url();"></div>
-            <div class="description"></div>
+            <div class="title"><h1>JEANS</h1></div>
+            <div class="image" style="--image_src: url();">IMG1</div>
+            <div class="description"><p>description</p></div>
         </div>
         <div class="item">
-            <div class="title"></div>
-            <div class="image" style="--image_src: url();"></div>
-            <div class="description"></div>
+            <div class="title"><h1>JEANS</h1></div>
+            <div class="image" style="--image_src: url();">IMG1</div>
+            <div class="description"><p>description</p></div>
         </div>
     </div>
 </div>
-<div class="nextbutton" onclick="nextbtn()">NEXT</div> <!-- ABSOLUTE -->
-<div class="prevbutton" onclick="prevbtn()">PREV</div> <!-- ABSOLUTE -->
+<div class="nextbutton" onclick="nextbtn()">></div>
+<div class="prevbutton" onclick="prevbtn()"><</div>
 */
 
 /* ^^^ COMPONENT 4 ^^^ */

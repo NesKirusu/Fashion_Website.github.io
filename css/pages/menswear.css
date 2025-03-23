@@ -1,0 +1,70 @@
+.site{
+    width: 100vw;
+}
+.site .header h1{
+    font-family: Outfit;
+    font-size: 2rem;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    text-align: center;
+    padding: 1rem;
+}
+.site .pages_container{
+    --image_height: 100vh;
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 25vw));
+    grid-template-rows: auto auto;
+}
+.site .pages_container .sweaters a,
+.site .pages_container .clothes a,
+.site .pages_container .jeans a,
+.site .pages_container .shoes a{
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    cursor: pointer;
+}
+.site .pages_container .sweaters .image,
+.site .pages_container .clothes .image,
+.site .pages_container .jeans .image,
+.site .pages_container .shoes .image{
+    height: var(--image_height);
+    width: 100%;
+    background-image: var(--image_src);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    filter: blur(0px) grayscale(0);
+    transform: scale(1.1);
+    z-index: 1;
+    transition: all 0.7s ease-in-out;
+}
+.site .pages_container .sweaters .image:not(:hover),
+.site .pages_container .clothes .image:not(:hover),
+.site .pages_container .jeans .image:not(:hover),
+.site .pages_container .shoes .image:not(:hover){
+    filter: blur(10px) grayscale(1);
+    transform: scale(1.0);
+}
+.site .pages_container .sweaters .image h1,
+.site .pages_container .clothes .image h1,
+.site .pages_container .jeans .image h1,
+.site .pages_container .shoes .image h1{
+    font-family: Outfit;
+    font-size: 4rem;
+    width: 100%;
+    text-align: center;
+    color: var(--text);
+    text-transform: uppercase;
+    font-weight: 300;
+    background-color: var(--pimrary2);
+    backdrop-filter: blur(10px);
+}

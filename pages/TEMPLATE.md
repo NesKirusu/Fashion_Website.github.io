@@ -16,14 +16,14 @@
     <!-- HEADER -->
     <div class="site-header">
         <span id="logo" onclick="transition('../homepage/index.html')" style="cursor: pointer;"></span>
-        <a onclick="transition('../fashion_design/index.html')">Fashion News</a>
-        <a onclick="transition('../editorial/index.html')">Editorial</a>
-        <a onclick="transition('../dress_clothes_jeans,_shoes(clothing)mens/index.html')">Menswear</a>
-        <a onclick="transition('../dress_clothes_jeans,_shoes(clothing)womens/index.html')">Womenswear</a>
-        <a onclick="transition('../shoes_bags/index.html')">Shoes & Bags</a>
-        <a onclick="transition('../accessories/index.html')">Accessories</a>
-        <a onclick="transition('../styles_fashion_gallery/index.html')">Gallery</a>
-        <a onclick="transition('../tips_and_tricks_combinations/index.html')">Style Tips</a>
+            <a onclick="transition('../fashion_design/index.html')">Fashion News</a>
+            <a onclick="transition('../editorial/index.html')">Editorial</a>
+            <a onclick="transition('../sweaters_clothes_jeans,_shoes(clothing)mens/index.html')">Menswear</a>
+            <a onclick="transition('../dress_clothes_jeans,_shoes(clothing)womens/index.html')">Womenswear</a>
+            <a onclick="transition('../bags/index.html')">Bags</a>
+            <a onclick="transition('../accessories/index.html')">Accessories</a>
+            <a onclick="transition('../styles_fashion_gallery/index.html')">Gallery</a>
+            <a onclick="transition('../tips_and_tricks_combinations/index.html')">Style Tips</a>
             <a onclick="transition('../designers_references/index.html')">Designers</a>
         <button onclick="hamburger()">☰</button>
     </div>
