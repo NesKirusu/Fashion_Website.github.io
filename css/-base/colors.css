@@ -5,7 +5,7 @@
     --text: #352f36;
     --text2: #cbc5cc;
     --background: #ffe8d5;
-    --background2: #e9d3c1;
+    --background2: #2b2b2b;
     --primary: #bfac9c;
     --primary2: #bfac9c3d;
     --secondary: #514942;
@@ -14,7 +14,7 @@
 .darkmode{
     --text: #352f36;
     --background: #ffe8d5;
-    --background2: #e9d3c1;
+    --background2: #2b2b2b;
     --primary: #bfac9c;
     --primary2: #bfac9c3d;
     --secondary: #514942;
