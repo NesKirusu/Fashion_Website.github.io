@@ -246,6 +246,7 @@ image:
 }
 .component-slider_container .slider_track .content{
     background-color: var(--background2);
+    padding: 2rem;
 }
 
 /* ^^^ COMPONENT 5 ^^^ */

@@ -1,0 +1,22 @@
+.site{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+.site .content_news{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+.site .content_news .container{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 600px));
+    grid-template-rows: auto auto auto;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.site .content_discussions .component-box_container_small_box_image_preview .title{
+    width: 40vw;
+}
