@@ -1,0 +1,54 @@
+.site{
+    width: 100vw;
+}
+.site .header h1{
+    font-family: Outfit;
+    font-size: 2rem;
+    font-weight: 200;
+    color: var(--text);
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    text-align: center;
+    padding: 1rem;
+}
+.site .header h1 a{
+    position: absolute;
+    left: 0;
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 1rem;
+    width: 50px;
+    height: 50px;
+    transform: scale(1.0);
+    font-family: Outfit;
+    font-size: 2rem;
+    background-color: var(--primary);
+    border-radius: 50%;
+    color: var(--background);
+    z-index: 1;
+    margin: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+.site .header h1 a:hover{
+    transform: scale(1.1);
+    background-color: var(--primary2);
+    border: 1px solid var(--primary);
+    color: var(--text);
+}
+.site .container{
+    position: relative;
+    width: 100vw;
+    height: 320vh;
+    display: flex;
+    justify-content: center;
+}
+.site .container .component-box_container_big .image{
+    background-position: top;
+    background-size: cover;
+}
+.site .container .component-box_container_big .image .author{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}

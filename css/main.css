@@ -1,6 +1,12 @@
 @import url(layout/footer.css);
 @import url(layout/header.css);
+
+/* components */
+
 @import url(components/content-box.css);
+
+/* components */
+
 @import url(-base/reset.css);
 @import url(-base/typography.css);
 @import url(-base/colors.css);

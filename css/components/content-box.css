@@ -10,7 +10,7 @@ description:
     gap: 1rem;
     grid-template-rows: subgrid;
     background-color: var(--background);
-    border: 1px solid var(--primary2);
+    border: 1px solid var(--text);
     font-family: Outfit;
     grid-row: span 3;
 }
@@ -25,10 +25,12 @@ description:
 .component-box_container .title{
     text-align: center;
     font-size: 2rem;
+    color: var(--text);
 }
 .component-box_container .description{
     text-align: center;
     font-size: 1.2rem;
+    color: var(--text);
 }
 
 /* ^^^ COMPONENT 1 ^^^ */
@@ -48,8 +50,8 @@ small_box
     font-size: 2rem;
     align-items: center;
     width: 100%;
-    border-top: 2px solid var(--primary2);
-    border-bottom: 2px solid var(--primary2);
+    border-top: 2px solid var(--text);
+    border-bottom: 2px solid var(--text);
     background-color: var(--background);
 
     @media (max-width: 1260px) {
@@ -107,6 +109,7 @@ image:
 }
 .component-box_container_big:hover .image{
     background-size: 115%;
+    cursor: pointer;
 }
 .component-box_container_big .image{
     height: var(--image_height);
@@ -117,6 +120,7 @@ image:
     background-repeat: no-repeat;
     background-size: 110%;
     transition: all 0.3s ease-in-out;
+    margin-bottom: 1rem;
 }
 .component-box_container_big .title{
     width: 100%;
@@ -127,12 +131,14 @@ image:
     text-align: center;
     font-family: Outfit;
     font-size: 2rem;
+    color: var(--text);
 }
 .component-box_container_big .author{
     background-color: var(--primary2);
     backdrop-filter: blur(10px);
     bottom: 0;
     text-align: center;
+    color: var(--text);
 }
 
 /* ^^^ COMPONENT 3 ^^^ */

@@ -5,18 +5,19 @@
     --text: #352f36;
     --text2: #cbc5cc;
     --background: #ffe8d5;
-    --background2: #d4c4b6;
+    --background2: #e4cebc;
     --primary: #bfac9c;
     --primary2: #bfac9c3d;
     --secondary: #514942;
     --accent: #000000;
 }
 .darkmode{
-    --text: #352f36;
-    --background: #ffe8d5;
-    --background2: #2b2b2b;
-    --primary: #bfac9c;
-    --primary2: #bfac9c3d;
-    --secondary: #514942;
-    --accent: #000000;
+    --text: #cbc5cc;
+    --text2: #e6dde7;
+    --background: #352f36;
+    --background2: #5f5561;
+    --primary: #cbc5cc;
+    --primary2: #352f363d;
+    --secondary: #352f36;
+    --accent: #cbc5cc;
 }

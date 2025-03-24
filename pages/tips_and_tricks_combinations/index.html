@@ -8,6 +8,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../../css/main.css">
     <link rel="stylesheet" href="../../css/pages/menswear.css">
+    <link rel="stylesheet" href="../../css/pages/tips_and_tricks_combinations.css">
     <!-- CSS -->
 
     <title>Urban Trends</title>
@@ -49,26 +50,24 @@
         </div>
         <div class="pages_container">
             <div class="sweaters">
-                <a onclick="transition('sweaters.html')">
-                    <div class="image" style="--image_src: url(../../img/menswear/hero1.png);">
-                        <h1>sweaters</h1>
+                <a onclick="transition('tips.html')">
+                    <div class="image" style="--image_src: url(../../img/tipsNtricks/tips1.png);">
+                        <h1>Tips</h1>
                     </div>
                 </a>
             </div>
             <div class="clothes">
-                <a onclick="transition('polos.html')">
-                    <div class="image" style="--image_src: url(../../img/menswear/hero2.png);">
-                        <h1>polos</h1>
+                <a onclick="transition('tricks.html')">
+                    <div class="image" style="--image_src: url(../../img/tipsNtricks/tricks1.png);">
+                        <h1>Tricks</h1>
                     </div>
                 </a>
             </div>
         </div>
     </div>
     <!-- SITE -->
-
-    
-     <!-- FOOTER -->
-     <div class="site-footer">
+    <!-- FOOTER -->
+    <div class="site-footer">
         <div class="header">
             <h1>URBAN TRENDS</h1>
             <p>by Kevin</p>
@@ -95,9 +94,11 @@
             <a onclick="transition('../editorial/index.html')">Editorial</a>
         </div>
         <div class="links">
-            <a onclick="transition('../clothing/index.html')">Clothing</a>
-            <a onclick="transition('../shoes_bags/index.html')">Shoes & Bags</a>
+            <a onclick="transition('../sweaters_clothes_jeans,_shoes(clothing)mens/index.html')">Menswear</a>
+            <a onclick="transition('../dress_clothes_jeans,_shoes(clothing)womens/index.html')">Womenswear</a>
+            <a onclick="transition('../bags/index.html')">Bags</a>
             <a onclick="transition('../accessories/index.html')">Accessories</a>
+            <span onclick="light_dark()" id="mode">Dark Mode</span>
         </div>
         <div class="legal_information">
             <h1>© 2025 Urban Trends. All Rights Reserved.</h1>
@@ -108,6 +109,7 @@
     <!-- FOOTER -->
 </body>
 <script src="app.js"></script>
+<script src="../../css/layout/footer.js"></script>
 <script src="../../css/layout/transition.js"></script>
 <script src="../../css/layout/header.js"></script>
 </html>

@@ -6,9 +6,10 @@
     width: 100vw;
     bottom: 0;
     row-gap: 1rem;
-    background-color: var(--primary);
+    background-color: var(--background);
     padding-bottom: 2rem;
     z-index: 1000;
+    border-top: 2px solid var(--primary);
 
     @media (max-width: 1260px) {
         grid-template-columns: 1fr 1fr;
@@ -21,7 +22,7 @@
     justify-content: center;
     align-items: center;
     grid-column: span 4;
-    background-color: var(--primary);
+    background-color: var(--background);
     @media (max-width: 1260px) {
         grid-column: span 2;
     }
@@ -64,23 +65,23 @@
     padding: 1rem;
     display: flex;
     border: 1px solid var(--text2);
-    background-color: var(--text);
+    background-color: var(--background);
 }
 .site-footer .header .newsletter .textbox h2{
     cursor: pointer;
-    color: var(--text2);
+    color: var(--text);
     font-size: 1rem;
     padding: 0.5rem;
     width: 90px;
-    border: 1px solid var(--primary);
-    background-color: var(--text);
+    border: 1px solid var(--primary2);
+    background-color: var(--background);
     z-index: 2;
     transition: all 0.3s ease-in-out;
 }
 .site-footer .header .newsletter .textbox h2:hover{
     position: relative;
     color: var(--text);
-    background-color: var(--text2);
+    background-color: var(--background);
     width: 120px;
 }
 .site-footer .header .newsletter .textbox h2:hover::after{
@@ -137,9 +138,18 @@
 .site-footer .socials h1:hover,
 .site-footer .socials a:hover,
 .site-footer .links a:hover,
-.site-footer .legal_information h1:hover{
-    background-color: var(--secondary);
-    color: var(--text2);
+.site-footer .legal_information h1:hover,
+.site-footer .links span:hover{
+    background-color: var(--text);
+    color: var(--background);
     border-radius: 10px;
+    z-index: 1;
+}
+.site-footer .links span{
+    cursor: pointer;
+    color: var(--text);
+    width: 200px;
+    font-size: 1rem;
+    padding: 0.5rem;
     z-index: 1;
 }

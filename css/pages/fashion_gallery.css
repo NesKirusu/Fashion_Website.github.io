@@ -70,6 +70,7 @@
     background-color: var(--primary2);
     backdrop-filter: blur(10px);
     padding: 1rem;
+    color: var(--text);
 }
 .component-slider_container .slider_track .content .description,
 .component-slider_container .slider_track .content .description2{

@@ -1,0 +1,129 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Urban Trends - Your go-to fashion destination for accessories, shoes, bags, and the latest trends.">
+    <link rel="icon" type="image/x-icon" href="../../img/logo.svg">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/pages/designers.css">
+    <!-- CSS -->
+
+    <title>Urban Trends</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <div class="site-header">
+        <span id="logo" onclick="transition('../homepage/index.html')" style="cursor: pointer;"></span>
+            <a onclick="transition('../fashion_design/index.html')">Fashion News</a>
+            <a onclick="transition('../editorial/index.html')">Editorial</a>
+            <a onclick="transition('../sweaters_clothes_jeans,_shoes(clothing)mens/index.html')">Menswear</a>
+            <a onclick="transition('../dress_clothes_jeans,_shoes(clothing)womens/index.html')">Womenswear</a>
+            <a onclick="transition('../bags/index.html')">Bags</a>
+            <a onclick="transition('../accessories/index.html')">Accessories</a>
+            <a onclick="transition('../styles_fashion_gallery/index.html')">Gallery</a>
+            <a onclick="transition('../tips_and_tricks_combinations/index.html')">Style Tips</a>
+            <a onclick="transition('../designers_references/index.html')">Designers</a>
+        <button onclick="hamburger()">☰</button>
+    </div>
+    <div class="container">
+        <div class="hamburger hidden" id="hamburger">
+            <a onclick="transition('../fashion_design/index.html')">Fashion News</a>
+            <a onclick="transition('../editorial/index.html')">Editorial</a>
+        <a onclick="transition('../dress_clothes_jeans,_shoes(clothing)mens/index.html')">Menswear</a>
+        <a onclick="transition('../dress_clothes_jeans,_shoes(clothing)womens/index.html')">Womenswear</a>
+            <a onclick="transition('../shoes_bags/index.html')">Shoes & Bags</a>
+            <a onclick="transition('../accessories/index.html')">Accessories</a>
+            <a onclick="transition('../styles_fashion_gallery/index.html')">Gallery</a>
+            <a onclick="transition('../tips_and_tricks_combinations/index.html')">Style Tips</a>
+            <a onclick="transition('../designers_references/index.html')">Designers & References</a>
+        </div>
+    </div>
+    <!-- HEADER -->
+
+    <!-- SITE -->
+    <div class="site">
+        <div class="left_titles">
+            <ul>Daniel Roth</ul>
+            <ul>Zara</ul>
+            <ul>Ssense</ul>
+            <ul>The Fashion Spot</ul>
+        </div>
+        <div class="content" id="carousel">
+            <div class="container">
+                <div class="website" style="--image_src: url(../../img/designers/designers1.png);"></div>
+                <div class="website" style="--image_src: url(../../img/designers/designers2.png);"></div>
+                <div class="website" style="--image_src: url(../../img/designers/designers3.png);"></div>
+            </div>
+            <div class="container">
+                <div class="website" style="--image_src: url(../../img/designers/designers4.png);"></div>
+                <div class="website" style="--image_src: url(../../img/designers/designers5.png);"></div>
+                <div class="website" style="--image_src: url(../../img/designers/designers6.png);"></div>
+            </div>
+            <div class="container">
+                <div class="website" style="--image_src: url(../../img/designers/designers7.png);"></div>
+                <div class="website" style="--image_src: url(../../img/designers/designers8.png);"></div>
+                <div class="website" style="--image_src: url(../../img/designers/designers9.png);"></div>
+            </div>
+            <div class="container">
+                <div class="website" style="--image_src: url(../../img/designers/designers10.png);"></div>
+                <div class="website" style="--image_src: url(../../img/designers/designers11.png);"></div>
+                <div class="website" style="--image_src: url(../../img/designers/designers12.png);"></div>
+            </div>
+        </div>
+        <div class="buttons">
+            <div class="nextbtn" ><h1 onclick="nextbtn()">NEXT</h1></div>
+            <div class="prevbtn" ><h1 onclick="prevbtn()">PREV</h1></div>
+        </div>
+    </div>
+    <!-- SITE -->
+    
+
+    <!-- FOOTER -->
+    <div class="site-footer">
+        <div class="header">
+            <h1>URBAN TRENDS</h1>
+            <p>by Kevin</p>
+            <div class="newsletter">
+                <h2>Get the latest fashion trends in your inbox</h2>
+                <div class="textbox" placeholder="Email">
+                    <input type="text">
+                    <h2>Subscribe</h2>
+                </div>
+            </div>
+        </div>
+        <div class="essentials">
+            <h1>About Us</h1>
+            <h1>Email: support@urbantrends.com</h1>
+            <h1>Phone: +1 234 567 890</h1>
+            <h1>Privacy Policy</h1>
+            <h1>Terms of Service</h1> 
+        </div>
+        <div class="socials">
+            <h1>Instagram</h1>
+            <h1>Faceboook</h1>
+            <h1>Twitter</h1>
+            <h1>Pinterest</h1>
+            <a onclick="transition('../editorial/index.html')">Editorial</a>
+        </div>
+        <div class="links">
+            <a onclick="transition('../sweaters_clothes_jeans,_shoes(clothing)mens/index.html')">Menswear</a>
+            <a onclick="transition('../dress_clothes_jeans,_shoes(clothing)womens/index.html')">Womenswear</a>
+            <a onclick="transition('../bags/index.html')">Bags</a>
+            <a onclick="transition('../accessories/index.html')">Accessories</a>
+            <span onclick="light_dark()" id="mode">Dark Mode</span>
+        </div>
+        <div class="legal_information">
+            <h1>© 2025 Urban Trends. All Rights Reserved.</h1>
+            <h1>Registered Address: 123 Urban Trends Street, Navotas City</h1>
+            <h1>Affiliate Program – Earn commissions by promoting our products.</h1>
+        </div>
+    </div>
+    <!-- FOOTER -->
+</body>
+<script src="app.js"></script>
+<script src="../../css/layout/footer.js"></script>
+<script src="../../css/layout/transition.js"></script>
+<script src="../../css/layout/header.js"></script>
+</html>

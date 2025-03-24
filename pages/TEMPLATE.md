@@ -43,7 +43,7 @@
     <!-- HEADER -->
 
     
-     <!-- FOOTER -->
+    <!-- FOOTER -->
     <div class="site-footer">
         <div class="header">
             <h1>URBAN TRENDS</h1>
@@ -71,8 +71,9 @@
             <a onclick="transition('../editorial/index.html')">Editorial</a>
         </div>
         <div class="links">
-            <a onclick="transition('../clothing/index.html')">Clothing</a>
-            <a onclick="transition('../shoes_bags/index.html')">Shoes & Bags</a>
+            <a onclick="transition('../sweaters_clothes_jeans,_shoes(clothing)mens/index.html')">Menswear</a>
+            <a onclick="transition('../dress_clothes_jeans,_shoes(clothing)womens/index.html')">Womenswear</a>
+            <a onclick="transition('../bags/index.html')">Bags</a>
             <a onclick="transition('../accessories/index.html')">Accessories</a>
         </div>
         <div class="legal_information">

@@ -1,0 +1,6 @@
+.site .header{
+    color: var(--text);
+}
+.site .pages_container{
+    grid-template-columns: 1fr 1fr;
+}

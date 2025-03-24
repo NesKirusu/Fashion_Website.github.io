@@ -1,4 +1,5 @@
 .site{
+    overflow-x: clip;
     display: flex;
     flex-direction: column;
     width: 100vw;
@@ -17,6 +18,46 @@
     align-items: center;
     width: 100%;
 }
+.site .content_news .container .component-box_container .image{
+    background-size: cover;
+    background-position: top;
+    transition: all 0.5s ease-in-out;
+}
+.site .content_discussions .component-box_container_small_box_image_preview{
+    animation: reveal2 both;
+    animation-timeline: view();
+}
+.site .content_discussions .component-box_container_small_box_image_preview .image{
+    z-index: 12;
+}
 .site .content_discussions .component-box_container_small_box_image_preview .title{
     width: 40vw;
+}
+.site .content_news .container .component-box_container{
+    transition: all 0.5s ease-in-out;
+    animation: reveal both;
+    animation-timeline: view();
+}
+.site .content_news .container .component-box_container:not(:hover) .image{
+    filter: grayscale();
+}
+.site .content_news .container .component-box_container:hover .image{
+    transform: scale(1.05);
+}
+
+@keyframes reveal {
+    0%,10%{
+        transform: scale(0);
+    }
+    30%, 100%{
+        transform: scale(1);
+    }
+}
+@keyframes reveal2 {
+    0%,10%{
+        left: 100%;
+    }
+    30%, 100%{
+        left: 0%;
+    }
 }
